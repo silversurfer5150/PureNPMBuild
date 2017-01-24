@@ -1,0 +1,32 @@
+{
+  "name": "pure_npm_build",
+  "version": "1.0.0",
+  "description": "A build which doesn't use any other build tools except npm",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss build/css/style.min.css",
+    "build-js": "browserify js/**.js>build/js/script.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silversurfer5150/PureNPMBuild.git"
+  },
+  "keywords": [
+    "pure",
+    "npm"
+  ],
+  "author": "Will Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silversurfer5150/PureNPMBuild/issues"
+  },
+  "homepage": "https://github.com/silversurfer5150/PureNPMBuild#readme",
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
